@@ -22,5 +22,5 @@ jobs:
         run: terraform plan -lock=false
         
 
-      - name: Terraform Apply
-        run: terraform apply -lock=false -auto-approve 
+      - name: Terraform Destroy
+        run: terraform Destroy -lock=false -auto-approve 
