@@ -1,5 +1,4 @@
-name: Terraform EC2 Deploy
-
+name: Terraform destroy
 on:
   workflow_dispatch:   # allows manual trigger from Actions tab
 
@@ -23,4 +22,4 @@ jobs:
         
 
       - name: Terraform Destroy
-        run: terraform Destroy -lock=false -auto-approve 
+        run: terraform destroy -lock=false -auto-approve 
